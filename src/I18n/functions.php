@@ -24,7 +24,7 @@ if (!class_exists('Aura\Intl\Package')) {
 }
 // phpcs:enable
 
-if (!function_exists('__')) {
+if (!function_exists('__i')) {
     /**
      * Returns a translated string if one is found; Otherwise, the submitted message.
      *
@@ -33,7 +33,7 @@ if (!function_exists('__')) {
      * @return string The translated text.
      * @link https://book.cakephp.org/4/en/core-libraries/global-constants-and-functions.html#__
      */
-    function __(string $singular, ...$args): string
+    function __i(string $singular, ...$args): string
     {
         if (!$singular) {
             return '';
